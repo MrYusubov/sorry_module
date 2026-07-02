@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barışaq?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app" id="app">
+      <section class="scene scene--question is-active" id="questionScene" aria-label="Barışaq sualı">
+        <div class="ambient-hearts" aria-hidden="true">
+          <span>♥</span>
+          <span>♡</span>
+          <span>♥</span>
+          <span>♡</span>
+          <span>♥</span>
+          <span>♡</span>
+        </div>
+
+        <div class="proposal">
+          <p class="eyebrow">Bir balaca sualım var</p>
+          <h1>Barışaq?</h1>
+          <div class="button-bay" id="buttonBay">
+            <button class="btn btn--yes" id="yesBtn" type="button">Hə</button>
+            <button class="btn btn--no" id="noBtn" type="button">Yox</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene scene--answer" id="answerScene" aria-live="polite" aria-label="Cavab">
+        <div class="heart-rain" id="heartRain" aria-hidden="true"></div>
+        <div class="answer-copy">
+          <p>Bilirdim mənimlə barışacağını</p>
+          <h2>Səni çox istəyirəmm</h2>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
